@@ -63,7 +63,7 @@ if __name__ == '__main__':
     banner()
     
     shellcode = args.shellcode if args.shellcode != None else error()
-    shellcode = shellcode[2:]
+    shellcode = shellcode[2:]   # Here to delete the first "\x" in order to avoid creating an empty space in lists
     shellcode = shellcode.split("\\x")
 
     key = args.key if args.key != None else error()
