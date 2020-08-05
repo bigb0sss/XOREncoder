@@ -1,7 +1,7 @@
 #!/usr/bin/python
 # Version         : 1.0
 # Created date    : 07/03/2020
-# Last update     : 07/03/2020
+# Last update     : 08/05/2020
 # Author          : bigb0ss
 # Description     : XOR Encoder for shellcode
 # Example         : ./XOREncoder.py -s "\x41\x42\x43" -k "0xAA"
