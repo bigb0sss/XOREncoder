@@ -38,7 +38,7 @@ def encodeFormat1(a, b):
         
         xorKey = i^b
         encode+= "\\x"
-        encode+= "%02x" % xorKey
+        encode+= "%02x" % xorKey    # %02x is a format specifier that prints at least 2 digits (ex) 7 => 07)
     print encode
     length = len(encode)/4
     print "Length: %d \n" % length
@@ -52,7 +52,7 @@ def encodeFormat2(a, b):
 
         xorKey = i^b
         encode+= "0x"
-        encode+= "%02x, " % xorKey
+        encode+= "%02x, " % xorKey  
     print encode
     length = len(encode)/6
     print "Length: %d \n" % length
